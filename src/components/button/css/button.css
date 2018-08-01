@@ -1,0 +1,30 @@
+/**
+variables
+ */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  cursor: pointer;
+  border-radius: 7px;
+  text-align: center; }
+  .button:disabled {
+    cursor: not-allowed; }
+  .button_yellow {
+    background: #FFBC3B; }
+    .button_yellow:hover {
+      background: #ffb82c; }
+  .button_gray {
+    background: #ccc; }
+  .button_gray-grad {
+    background: #FEFEFE;
+    background-image: linear-gradient(to bottom, #FEFEFE, #C7C7C7);
+    box-shadow: 0px 2px 0px #949393;
+    border-radius: 7px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none; }
+  .button_transparent {
+    background: transparent;
+    border: 1px solid #ccc; }

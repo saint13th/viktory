@@ -1,0 +1,163 @@
+@import "../../common/css/variables";
+
+.game {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 950px;
+  background: $orange;
+  margin: 0 auto;
+
+  &__col {
+    &_1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calc(350px - 60px);
+      padding: 50px 30px;
+      color: $white;
+    }
+    &_2 {
+      width: 400px;
+      min-width: 400px;
+    }
+    &_3 {
+      width: calc(200px - 40px);
+      padding: 20px;
+    }
+  }
+
+  &__info {
+    &-row {
+      &_1 {
+        flex: 1;
+        text-align: center;
+      }
+      &_2 {
+        flex: 2;
+        display: flex;
+        align-items: center;
+      }
+      &-3 {
+        flex: 1;
+      }
+    }
+  }
+
+  &__logo {
+    flex: 1;
+    width: 140px;
+    height: 100px;
+    margin: 0 auto;
+    background: url("../../../images/game/game_1.svg") no-repeat;
+    background-size: contain;
+  }
+
+  &__name {
+    margin: 20px auto 0 auto;
+    font-size: 18px;
+  }
+
+  &__prise {
+    text-align: center;
+    font-size: 18px;
+    &-text {
+      font-size: 40px;
+      margin: 12px 0;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    font-size: 14px;
+    &_rules {
+      width: 100px;
+      margin: 20px auto 0 auto;
+      color: $black;
+      border: 1px solid $black;
+    }
+    &_approve, &_random, &_clear, &_exit {
+      height: 50px;
+      width: 160px;
+    }
+
+  }
+
+  &__description {
+    font-size: 14px;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-row {
+      width: 100%;
+
+      &_1 {
+      }
+      &_2 {
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+        & > div {
+          &:not(:first-child) {
+            margin-top: 25px;
+          }
+        }
+
+        & .rw-dropdown-list {
+          margin: 12px 0;
+        }
+      }
+      &_3 {
+      }
+    }
+    &-dropDown {
+
+    }
+    &-title {
+      padding-left: 7px;
+      width: 77px;
+        &_edition {
+
+        }
+    }
+  }
+  &__price {
+    padding-left: 7px;
+    &-value {
+      margin: 12px 0;
+      font-size: 24px;
+    }
+    &-text {
+      margin: 12px 0;
+    }
+  }
+  &__description {
+    margin-top: 12px;
+  }
+  &__editions {
+
+    & .rw-dropdown-list {
+      width: 80px;
+    }
+  }
+  &__edition {
+    & .rw-dropdown-list {
+      width: 100px;
+    }
+    &-time {
+      padding-left: 15px;
+    }
+  }
+  &__card {
+    &-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background: $white
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/**
+variables
+ */
+.icon_close {
+  position: relative;
+  transform: rotate(45deg);
+  width: 25px;
+  height: 25px; }
+  .icon_close:before, .icon_close:after {
+    position: absolute;
+    top: 50%;
+    width: 34px;
+    height: 2px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #c9c9c9;
+    border-radius: 2px;
+    content: '';
+    background-color: #000; }
+  .icon_close:before {
+    width: 20px;
+    height: 1px; }
+  .icon_close:after {
+    height: 20px;
+    width: 1px; }
